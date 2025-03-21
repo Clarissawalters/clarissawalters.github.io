@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Play Portfolio</title>
+    <link rel="stylesheet" href="option2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gruppo&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="home" class="section active">
+            <div>
+                <h1>Oh hey, didn't see you there.</h1>
+                <h2>Welcome to my corner of the web!</h2>
+                <p>I'm someone who loves figuring things out, making things fun, and
+                    occasionally baking something (hopefully) edible.</p>
+                <button id="myButton">Did you know?</button>
+                <p id="message"></p>
+            </div>
+        </div>
+        <div id="about" class="section">
+            <div>
+                <div>
+                    <h1><b>You wanna know more??</b></h1>
+                    <h2><b>Well, ok.</b></h2>
+                    <p> Much like an octopus, I adapt,
+                        problem-solve, and occasionally panic in a cloud of metaphorical ink.
+                        I'm still figuring things out, but I enjoy learning, experimenting, and seeing what I
+                        can create.
+                        Right now, I'm just trying to get better every day—and maybe cry less.(No promises.)
+                    </p>
+                </div>
+                <div>
+                    <h1>Professional? Sometimes</h1>
+                    <ul>
+                        <li>Collaboration (unless we're debating pineapple on pizza)</li>
+                        <li>Organization (my tabs say otherwise)</li>
+                        <li>Adaptability (because life is just a series of unexpected updates)</li>
+                        <li>Initiative (or at least the ability to Google really fast)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="section">
+            <div>
+                <h1><b>Looking for proof?</b></h1>
+                <h3><b>Here's what I've accomplished in 8 weeks</b></h3>
+                <p>It may not be groundbreaking (yet), but every project is a step forward. Take a look and see
+                    what I've been learning!</p>
+                <div class="row">
+                    <div class="portfolio-container">
+                        <img src="assets/rhubarb.jpg" alt="assorted fruit" class="image">
+                    </div>
+                    <div class="portfolio-container">
+                        <img src="assets/allthatglitter.png" alt="potted monstera" class="image">
+                    </div>
+                    <div class="portfolio-container">
+                        <img src="assets/stephs opener.jpg" alt="lady with violin" class="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="section">
+            <div class="contact-container">
+                <div class="column">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="Email" placeholder="Your email">
+
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div></div>
+                <div class="content column">
+                    <h3>Find me on...</h3>
+                    <a href="mailto:clarissawalters93@gmail.com"
+                        class="contact-item email">clarissawalters93@gmail.com</a>
+                    <a href="https://github.com/Clarissawalters"><img src="assets/github.png" class="contact-item icon"
+                            alt="github logo"></a>
+                    <a href="https://www.linkedin.com/in/clarissa-walters-a8066a34a/"><img src="assets/logo.png"
+                            class="contact-item icon" alt="linkedIn logo"></a>
+                    <hr class="vertical-line">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="nav">
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('portfolio')">Portfolio</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <script src="option2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    height: 1500px;
+
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/violinright.jpg);
+    background-attachment: fixed;
+}
+
+main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+    /* Used in this example to enable scrolling */
+}
+
+.header-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    color: black;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.barlow-thin {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.barlow-extralight {
+    font-family: "Barlow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.barlow-light {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.over-the-rainbow-regular {
+    font-family: "Over the Rainbow", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
