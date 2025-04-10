@@ -1,55 +1,50 @@
 html,
 body {
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-    height: 1500px;
-
+    margin: 0px;
+    padding: 0px;
 }
 
 .container {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(images/violinright.jpg);
-    background-attachment: fixed;
+    padding: 16px;
+    /* margin-top: 30px; */
+    /* height: 60vh; */
+    scroll-behavior: smooth;
 }
 
-main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px;
-    /* Used in this example to enable scrolling */
+.main-image {
+    position: relative;
+    width: 800px;
+    Height: 600px;
+
 }
 
 .header-text {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-90%, -50%);
     color: black;
+    background-color: rgb(73, 90, 84, .5);
 }
 
+.logo {
+    height: 60px;
+    width: 60px;
+}
 
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
     top: 0;
     width: 100%;
-    display: inline-block;
+    height: 50%;
+    font-family: "gruppo";
+    font-size: 25px;
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 14px;
 }
 
 .navbar a:hover {
@@ -57,10 +52,50 @@ main {
     color: black;
 }
 
-.parent {
+.row {
     display: flex;
     flex-direction: row;
 }
+
+.section {
+    position: absolute;
+    width: 65%;
+    height: 90vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 40px;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    right: 80px;
+    top: 200px;
+    background-color: rgb(73, 90, 84, .8)
+}
+
+/*------------- photo gallery -----------*/
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+div.scroll-container img {
+    padding: 5px;
+}
+
+.image {
+    height: 400px;
+    width: 600px;
+}
+
+
+
+
+
 
 .barlow-thin {
     font-family: "Barlow", sans-serif;

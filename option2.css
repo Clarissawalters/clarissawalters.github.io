@@ -230,7 +230,7 @@ input[type=submit]:hover {
     font-family: "gruppo";
 }
 
-/* .contact-bar {
+.contact-bar {
     position: fixed;
     right: 15px;
     bottom: 30px;
@@ -238,14 +238,14 @@ input[type=submit]:hover {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-} */
+}
 
-/* .vertical-line {
+.vertical-line {
     width: 1px;
     height: 100px;
     background-color: rgb(224, 221, 226);
     border: none;
-} */
+}
 
 .column {
     flex-direction: row;
@@ -256,6 +256,7 @@ input[type=submit]:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    writing-mode: vertical-rl;
     text-decoration: none;
     color: rgb(224, 221, 226);
     font-size: 14px;
